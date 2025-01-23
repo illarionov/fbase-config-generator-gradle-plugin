@@ -12,10 +12,12 @@ import ru.pixnews.gradle.fbase.test.functional.testmatrix.Version
 import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_7_4
 import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_7_5
 import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_8_0
+import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_8_10_2
 import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_8_2
 import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_8_4
 import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_8_6
 import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_8_7
+import ru.pixnews.gradle.fbase.test.functional.testmatrix.compatibility.GradleVersionCompatibility.GRADLE_8_9
 
 internal object AgpVersionCompatibility {
     val AGP_7_0_0 = Version(7, 0, 0)
@@ -32,7 +34,14 @@ internal object AgpVersionCompatibility {
     val AGP_8_4_0 = Version(8, 4, 0)
     val AGP_8_4_2 = Version(8, 4, 2)
     val AGP_8_5_0 = Version(8, 5, 0)
-    val AGP_8_6_0_BETA01 = Version(8, 6, 0, "beta01")
+    val AGP_8_5_2 = Version(8, 5, 2)
+    val AGP_8_6_0 = Version(8, 6, 0)
+    val AGP_8_6_1 = Version(8, 6, 1)
+    val AGP_8_7_0 = Version(8, 7, 0)
+    val AGP_8_7_3 = Version(8, 7, 3)
+    val AGP_8_8_0 = Version(8, 8, 0)
+    val AGP_8_9_0_BETA01 = Version(8, 9, 0, "beta01")
+    val AGP_8_10_0_ALPHA01 = Version(8, 10, 0, "alpha01")
 
     // Checks if a AGP version [agpVersion] can run on the current JVM
     fun isAgpCompatibleWithRuntime(agpVersion: Version): Boolean {
@@ -51,6 +60,8 @@ internal object AgpVersionCompatibility {
         agpVersion: Version,
         gradleVersion: Version,
     ) = when {
+        agpVersion >= AGP_8_8_0 -> gradleVersion >= GRADLE_8_10_2
+        agpVersion >= AGP_8_7_0 -> gradleVersion >= GRADLE_8_9
         agpVersion >= AGP_8_5_0 -> gradleVersion >= GRADLE_8_7
         agpVersion >= AGP_8_4_0 -> gradleVersion >= GRADLE_8_6
         agpVersion >= AGP_8_3_0 -> gradleVersion >= GRADLE_8_4
@@ -65,6 +76,7 @@ internal object AgpVersionCompatibility {
     fun getCompatibleAndroidApiLevel(
         agpVersion: Version,
     ): Int = when {
+        agpVersion >= AGP_8_6_0 -> 35
         agpVersion >= AGP_8_1_1 -> 34
         agpVersion >= AGP_7_2_0 -> 33
         else -> 32

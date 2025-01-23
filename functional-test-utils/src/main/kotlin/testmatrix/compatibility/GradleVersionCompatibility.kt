@@ -32,7 +32,7 @@ internal object GradleVersionCompatibility {
     val GRADLE_7_5 = Version(7, 5)
     val GRADLE_7_5_1 = Version(7, 5, 1)
     val GRADLE_7_6 = Version(7, 6)
-    val GRADLE_7_6_3 = Version(7, 6, 3)
+    val GRADLE_7_6_4 = Version(7, 6, 4)
     val GRADLE_8_0 = Version(8, 0)
     val GRADLE_8_0_2 = Version(8, 0, 2)
     val GRADLE_8_1_1 = Version(8, 1, 1)
@@ -45,6 +45,9 @@ internal object GradleVersionCompatibility {
     val GRADLE_8_7 = Version(8, 7)
     val GRADLE_8_8 = Version(8, 8)
     val GRADLE_8_9 = Version(8, 9)
+    val GRADLE_8_10_2 = Version(8, 10, 2)
+    val GRADLE_8_11_1 = Version(8, 11, 1)
+    val GRADLE_8_12 = Version(8, 12)
 
     // Checks if a Gradle version can run on the current JVM
     fun isGradleCompatibleWithRuntime(gradleVersion: Version): Boolean {

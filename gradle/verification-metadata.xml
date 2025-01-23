@@ -133,6 +133,11 @@
             <pgp value="1BD97A6A154E7810EE0BC832E2F38302C8075E3D"/>
          </artifact>
       </component>
+      <component group="com.gradle.publish" name="plugin-publish-plugin" version="1.3.0">
+         <artifact name="plugin-publish-plugin-1.3.0.jar">
+            <pgp value="1BD97A6A154E7810EE0BC832E2F38302C8075E3D"/>
+         </artifact>
+      </component>
       <component group="com.saveourtool.diktat" name="diktat-gradle-plugin" version="2.0.0">
          <artifact name="diktat-gradle-plugin-2.0.0.jar">
             <pgp value="B879179229681AD9E8D23A0812DC99973C2318FD"/>
@@ -153,6 +158,11 @@
             <pgp value="2DB4F1EF0FA761ECC4EA935C86FDC7E2A11262CB"/>
          </artifact>
       </component>
+      <component group="dev.drewhamilton.poko" name="poko-annotations-jvm" version="0.16.0">
+         <artifact name="poko-annotations-jvm-0.16.0.jar">
+            <pgp value="09939C73246B4BA7444CAA453D002DBC5EA9615F"/>
+         </artifact>
+      </component>
       <component group="dev.equo.ide" name="solstice" version="1.7.5">
          <artifact name="solstice-1.7.5.jar">
             <pgp value="1D2C7EF8ADA0F794B58C7C63436902AF59EDF60E"/>
@@ -163,8 +173,18 @@
             <pgp value="1D2C7EF8ADA0F794B58C7C63436902AF59EDF60E"/>
          </artifact>
       </component>
+      <component group="dev.equo.ide" name="solstice" version="1.8.0">
+         <artifact name="solstice-1.8.0.jar">
+            <pgp value="1D2C7EF8ADA0F794B58C7C63436902AF59EDF60E"/>
+         </artifact>
+      </component>
       <component group="dev.zacsweers.kctfork" name="core" version="0.4.1">
          <artifact name="core-0.4.1.jar">
+            <pgp value="719F7C29985A8E95F58F47194D8159D6A1159B69"/>
+         </artifact>
+      </component>
+      <component group="dev.zacsweers.kctfork" name="core" version="0.7.0">
+         <artifact name="core-0.7.0.jar">
             <pgp value="719F7C29985A8E95F58F47194D8159D6A1159B69"/>
          </artifact>
       </component>
@@ -178,6 +198,11 @@
             <pgp value="1F47744C9B6E14F2049C2857F1F111AF65925306"/>
          </artifact>
       </component>
+      <component group="io.github.classgraph" name="classgraph" version="4.8.179">
+         <artifact name="classgraph-4.8.179.jar">
+            <pgp value="1F47744C9B6E14F2049C2857F1F111AF65925306"/>
+         </artifact>
+      </component>
       <component group="io.github.davidburstrom.contester" name="contester-breakpoint" version="0.2.0">
          <artifact name="contester-breakpoint-0.2.0.jar">
             <pgp value="C0612048F3393B80B22639B4F067A2FD751AE3E4"/>
@@ -185,6 +210,11 @@
       </component>
       <component group="io.github.detekt.sarif4k" name="sarif4k-jvm" version="0.4.0">
          <artifact name="sarif4k-jvm-0.4.0.jar">
+            <pgp value="8569C95CADC508B09FE90F3002216ED811210DAA"/>
+         </artifact>
+      </component>
+      <component group="io.github.detekt.sarif4k" name="sarif4k-jvm" version="0.6.0">
+         <artifact name="sarif4k-jvm-0.6.0.jar">
             <pgp value="8569C95CADC508B09FE90F3002216ED811210DAA"/>
          </artifact>
       </component>
@@ -258,6 +288,11 @@
             <pgp value="2E92113263FC31C74CCBAAB20E91C2DE43B72BB1"/>
          </artifact>
       </component>
+      <component group="org.eclipse.jgit" name="org.eclipse.jgit" version="6.10.0.202406032230-r">
+         <artifact name="org.eclipse.jgit-6.10.0.202406032230-r.jar">
+            <pgp value="7C669810892CBD3148FA92995B05CCDE140C2876"/>
+         </artifact>
+      </component>
       <component group="org.eclipse.jgit" name="org.eclipse.jgit" version="6.7.0.202309050840-r">
          <artifact name="org.eclipse.jgit-6.7.0.202309050840-r.jar">
             <pgp value="7C669810892CBD3148FA92995B05CCDE140C2876"/>
@@ -265,6 +300,11 @@
       </component>
       <component group="org.eclipse.platform" name="org.eclipse.osgi" version="3.18.300">
          <artifact name="org.eclipse.osgi-3.18.300.jar">
+            <pgp value="9E3044071B758EBCB7E45673700E4F39BC05364B"/>
+         </artifact>
+      </component>
+      <component group="org.eclipse.platform" name="org.eclipse.osgi" version="3.18.500">
+         <artifact name="org.eclipse.osgi-3.18.500.jar">
             <pgp value="9E3044071B758EBCB7E45673700E4F39BC05364B"/>
          </artifact>
       </component>
@@ -278,9 +318,19 @@
             <pgp value="1BD97A6A154E7810EE0BC832E2F38302C8075E3D"/>
          </artifact>
       </component>
+      <component group="org.gradle.kotlin" name="gradle-kotlin-dsl-plugins" version="5.1.2">
+         <artifact name="gradle-kotlin-dsl-plugins-5.1.2.jar">
+            <pgp value="1BD97A6A154E7810EE0BC832E2F38302C8075E3D"/>
+         </artifact>
+      </component>
       <component group="org.hamcrest" name="hamcrest-core" version="1.3">
          <artifact name="hamcrest-core-1.3.jar">
             <pgp value="4DB1A49729B053CAF015CEE9A6ADFC93EF34893E"/>
+         </artifact>
+      </component>
+      <component group="org.jcommander" name="jcommander" version="1.85">
+         <artifact name="jcommander-1.85.jar">
+            <pgp value="1D85469D8559C2E1DF5F925131D2D79DF7E85DD3"/>
          </artifact>
       </component>
       <component group="org.jdom" name="jdom2" version="2.0.6">
@@ -325,6 +375,11 @@
       </component>
       <component group="org.snakeyaml" name="snakeyaml-engine" version="2.6">
          <artifact name="snakeyaml-engine-2.6.jar">
+            <pgp value="120D6F34E627ED3A772EBBFE55C7E5E701832382"/>
+         </artifact>
+      </component>
+      <component group="org.snakeyaml" name="snakeyaml-engine" version="2.7">
+         <artifact name="snakeyaml-engine-2.7.jar">
             <pgp value="120D6F34E627ED3A772EBBFE55C7E5E701832382"/>
          </artifact>
       </component>
