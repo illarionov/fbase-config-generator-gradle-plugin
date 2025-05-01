@@ -84,12 +84,8 @@ testing {
             }
         }
 
-        register<JvmTestSuite>("functionalTest") {
-            testType = "functional-test"
-        }
-        register<JvmTestSuite>("functionalMatrixTest") {
-            testType = "functional-matrix-test"
-        }
+        register<JvmTestSuite>("functionalTest")
+        register<JvmTestSuite>("functionalMatrixTest")
     }
 }
 
